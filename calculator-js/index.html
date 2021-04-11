@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" id="html">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+
+    <link rel="stylesheet" href="./main.css">
+
+    <!-- GOOGLE FONTS -->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#html">Home</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        
+        <div class="box">
+            <h1>Calculator</h1>
+            <p>by: Daniel Avzaradel</p>
+            <br>
+            <div class="calculator">
+                <div class="output">
+                    <div data-previous-operand class="previous-operand"></div>
+                    <div data-current-operand class="current-operand">0</div>
+                </div>
+                <div class="calc-btns">
+
+                    <button data-all-clear class="calc-btn clear">AC</button>
+                    <button data-delete class="calc-btn"><i class="fas fa-backspace"></i></button>
+
+                    <button data-number class="calc-btn">7</button>
+                    <button data-number class="calc-btn">8</button>
+                    <button data-number class="calc-btn">9</button>
+                    <button data-operation class="calc-btn">*</button>
+
+                    <button data-number class="calc-btn">4</button>
+                    <button data-number class="calc-btn">5</button>
+                    <button data-number class="calc-btn">6</button>
+                    <button data-operation class="calc-btn">-</button>
+         
+                    <button data-number class="calc-btn">1</button>
+                    <button data-number class="calc-btn">2</button>
+                    <button data-number class="calc-btn">3</button>
+                    <button data-operation class="calc-btn">+</button>
+
+                    <button data-number class="calc-btn">.</button>
+                    <button data-number class="calc-btn zero">0</button>
+                    <button data-operation class="calc-btn">/</button>
+
+                    <button data-equals class="calc-btn equal">=</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="contact">
+        <div class="box">
+            <h2>Contact Me</h2>
+            <br>
+            <form action="">
+                <input type="text" placeholder="Your Name">
+                <input type="email" placeholder="Email address">
+                <textarea name="textarea" id="" cols="30" rows="10" style="resize: none;"></textarea>
+                <button>Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+    <script src="https://kit.fontawesome.com/2098968af1.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
