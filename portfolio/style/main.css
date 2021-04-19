@@ -1,0 +1,553 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: white;
+}
+
+#colapse-menu {
+    display: none;
+}
+
+.hidden {
+    display: none;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    height: 40px;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+h1 {
+    font-size: 18px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+nav ul li a {
+    text-decoration: none;
+    padding: 11px 16px;
+    box-sizing: border-box;
+    transition: 0.2s ease all;
+}
+nav ul li a:hover {
+    background-color: lightblue;
+    color: #333;
+}
+
+
+/* =================== MAIN ==================== */
+
+#banner {
+    width: inherit;
+    height: 900px;
+    background-image: url(../background.jpeg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+}
+
+.container {
+    width: 60%;
+    display: block;
+    margin: auto;
+    align-items: center;
+}
+
+#banner div p {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #437378;
+}
+
+h2 {
+    font-size: 42px;
+    font-weight: 600;
+    transition: 0.2s;
+    text-align: center;
+    color: #444;
+}
+h2 span {
+    color: salmon;
+}
+
+#banner .container i {
+    color: #333;
+    margin: 20px;
+}
+
+#computer {
+    cursor: pointer;
+    animation-name: computer;
+    animation-duration: 2s;
+    transition: 0.2s ease all;
+}
+i#computer:hover {
+    color: rgb(0, 173, 216);
+}
+#banner .container div {
+    display: flex;
+    justify-content: center;
+}
+
+.arrow {
+    animation: blink .5s alternate ease;
+    animation-iteration-count: 2;
+    margin: 0;
+}
+
+
+/* =============== ABOUT, PORTFOLIO, BLOG ================ */
+
+
+#portfolio, #blog, #about {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    padding: 80px 0;
+}
+
+#about {
+    background-color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#about .container div {
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+
+}
+
+.about-box {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.about-box>div {
+    display: flex;
+    flex-direction: column;
+}
+
+#about img {
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    margin-right: 40px;
+}
+
+#about p {
+    color: #333;
+    margin-top: 20px;
+}
+
+h3 {
+    color: #333;
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+h4 {
+    color: rgb(0, 173, 216);
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.portfolio-box, .blog-box {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.work {
+    width: 350px;
+    height: 260px;
+    background-color: rgb(255, 213, 209);
+    margin: 10px;
+    box-sizing: border-box;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.work figure {
+    width: 100%;
+    height: 80%;
+}
+
+.work figcaption {
+    width: 100%;
+    height: 20%;
+    background-color: #444;
+}
+
+.work:hover {
+    background-color: salmon;
+}
+
+/* =============== CONTACT ================ */
+
+footer {
+    width: 100%;
+    background-color: #333;
+    height: auto;
+    padding: 60px 0;
+}
+
+footer h3 {
+    color: white;
+    padding: 10px 0;
+    margin-bottom: 10px;
+}
+
+.contact-box {
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+}
+
+footer h4 {
+    text-align: left;
+}
+
+footer i {
+    margin-right: 20px;
+    cursor: pointer;
+    transition: 0.2s
+}
+footer i:hover {
+    color: rgb(0, 173, 216);
+}
+
+footer a {
+    text-decoration: none;
+    transition: 0.2s ease all;
+}
+
+footer a:hover {
+    color: rgb(0, 173, 216);
+}
+
+.contact-box>div:first-child {
+    display: block;
+    justify-content: center;
+    padding: 40px 0;
+    width: 40%;
+}
+
+.contact-box>div>div {
+    display: flex;
+    justify-content: flex-start;
+}
+
+form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin: auto;
+}
+
+footer form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    outline: none;
+}
+
+footer form input:focus {
+    background-color: floralwhite;
+}
+
+textarea {
+    width: 100%;
+    outline: none;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+button#submit {
+    width: 220px;
+    margin: auto;
+    background-color: rgb(0, 102, 128);
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s;
+}
+#submit:hover {
+    background-color: rgb(0, 173, 216);
+}
+
+#contact-info {
+    display: block;
+}
+#contact-info div {
+    margin: 20px 0;
+}
+
+
+/* =============== ANIMATIONS ================ */
+
+@keyframes blink {
+    0% {
+    color: rgb(0, 173, 216);
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/* =============== MEDIA QUERIES ================ */
+
+@media screen and (min-width: 1441px) {
+    header {
+        padding: 0 120px;
+    }
+    .container {
+        width: 1200px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1440px) {
+    .container {
+        width: 86%;
+    }
+    .contact-box {
+        padding: 0 20px;
+    }
+    #banner {
+        background-position: top;
+        background-size: cover;
+    }
+}
+
+@media screen and (min-width: 425px) and (max-width: 767px) {
+    header {
+        z-index: 5;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        height: auto;
+    }
+    h1 {
+        position: absolute;
+        top: 14px;
+        left: 8px;
+    }
+    h2 {
+        width: 80%;
+        margin: auto;
+    }
+    #desktop-menu {
+        display: none;
+    }
+    #hidden {
+        width: 100%;
+        background-color: #555;
+        transition: 0.4s ease all;
+    }
+    #hidden ul {
+        width: 100%;
+        display: block;
+        justify-content: flex-end;
+        text-align: right;
+    }
+    #hidden ul li {
+        margin: 8px 0;
+        padding: 11px 16px;
+    }
+    #colapse-menu {
+        position: relative;
+        display: block;
+        border: 1px solid white;
+        padding: 6px;
+        border-radius: 4px;
+        margin: 12px 0;
+        margin-left: auto;
+        margin-right: 10px;
+    }
+    nav ul li a {
+        text-decoration: none;
+        padding: 11px 16px;
+        box-sizing: border-box;
+        transition: 0.2s ease all;
+    }
+    nav ul li a:hover {
+        color: white;
+        background-color: #555;
+    }
+    .container {
+        width: 100%;
+    }
+    #banner .container {
+        position: relative;
+        top: -18%;
+    }
+    .contact-box {
+        display: flex;
+        flex-direction: column;
+        padding: 0 20px;
+    }
+    .contact-box>div:first-child {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+    #about .container div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #about img {
+        margin: 0;
+    }
+    form {
+        width: 80%;
+    }
+    #banner .container div {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 319px) and (max-width: 424px) {
+    header {
+        z-index: 5;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        height: auto;
+    }
+    h1 {
+        position: absolute;
+        top: 14px;
+        left: 8px;
+    }
+    h2 {
+        width: 80%;
+        margin: auto;
+        font-size: 2em;
+    }
+    .container p {
+        font-size: 1em;
+    }
+    h4 {
+        font-size: 2em;
+    }
+    #desktop-menu {
+        display: none;
+    }
+    #hidden {
+        width: 100%;
+        background-color: #555;
+        transition: 0.4s ease all;
+    }
+    #hidden ul {
+        width: 100%;
+        display: block;
+        justify-content: flex-end;
+        text-align: right;
+    }
+    #hidden ul li {
+        margin: 8px 0;
+        padding: 11px 16px;
+    }
+    #colapse-menu {
+        position: relative;
+        display: block;
+        border: 1px solid white;
+        padding: 6px;
+        margin: 12px 0;
+        margin-left: auto;
+        margin-right: 10px;
+    }
+    nav ul li a {
+        text-decoration: none;
+        padding: 11px 16px;
+        box-sizing: border-box;
+        transition: 0.2s ease all;
+    }
+    nav ul li a:hover {
+        color: white;
+        background-color: #555;
+    }
+    .container {
+        width: 100%;
+    }
+    #banner .container {
+        position: relative;
+        top: -18%;
+    }
+    .contact-box {
+        display: flex;
+        flex-direction: column;
+        padding: 0 20px;
+    }
+    .contact-box>div:first-child {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+    #about .container div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #about img {
+        margin: 0;
+    }
+    form {
+        width: 100%;
+    }
+    #banner div p {
+        font-size: 1em;
+    }
+    #banner .container div {
+        display: none;
+    }
+    #contact-info div {
+        font-size: 0.8em;
+    }
+}
